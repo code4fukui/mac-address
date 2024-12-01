@@ -7,3 +7,12 @@ wi-fiパケットセンシングの概要については、こちらの論文を
 
 Wi-Fiパケットセンシングによるクルーズ旅客の観光周遊行動の捕捉とその特性分析～石川県金沢港を対象として～
 [https://www.jstage.jst.go.jp/article/jsceiii/1/J1/1_560/_pdf/-char/ja]
+
+## user.csv
+
+```sh
+deno run -A make.js
+deno run -A make2.js
+```
+全レコード数 30,794,029件
+全MACアドレスユニーク数 3,651件
