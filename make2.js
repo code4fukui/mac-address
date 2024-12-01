@@ -5,7 +5,11 @@ import { ArrayUtil } from "https://js.sabae.cc/ArrayUtil.js";
 const fns = await dir2array("user");
 const list = [];
 for (const fn of fns) {
-  const data = await CSV.fetchJSON("user/" + fn);
+  const path = "user/" + fn;
+  const data = await CSV.fetchJSON(path);
+  data.sort((a, b) => a.時間.localeCompare(b.時間));
+  await Deno.writeTextFile(path, CSV.stringify(data));
+  
   const user = fn.substring(0, fn.length - 4);
   const cnt = data.length;
   const pos = ArrayUtil.toUnique(data.map(i => i.施設No));
