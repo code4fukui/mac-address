@@ -35,7 +35,7 @@ for (const item of data) {
     const data = list[user];
     const path = "user/" + user + ".csv";
     const data0 = await CSV.fetchJSON(path, []);
-    data.forEach(i => data0.push(i));
+    data0.forEach(i => data.push(i));
     await Deno.writeTextFile(path, CSV.stringify(data, null, 2));
   }
 }
