@@ -26,5 +26,5 @@ for (const fn of fns) {
 list.sort((a, b) => (b.poslen - a.poslen) * 10000 + (b.cnt - a.cnt));
 await Deno.writeTextFile("user.csv", CSV.stringify(list, null, 2));
 
-await Deno.writeTextFile("user_all.csv", CSV.stringify(all, null, 2));
+await Deno.writeTextFile("move.csv", CSV.stringify(all, null, 2));
 console.log(all.length);
