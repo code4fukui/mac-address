@@ -8,7 +8,7 @@ wi-fiパケットセンシングの概要については、こちらの論文を
 Wi-Fiパケットセンシングによるクルーズ旅客の観光周遊行動の捕捉とその特性分析～石川県金沢港を対象として～
 [https://www.jstage.jst.go.jp/article/jsceiii/1/J1/1_560/_pdf/-char/ja]
 
-## user.csv / user_all.csv
+## move.csv / user.csv
 
 - [move.csv](move.csv) 30分単位でシュリンクした全件移動データ
 - [user.csv](user.csv) 30分単位でシュリンクしたユーザー全件データ
