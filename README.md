@@ -10,8 +10,8 @@ Wi-Fiパケットセンシングによるクルーズ旅客の観光周遊行動
 
 ## move.csv / user.csv
 
-- [move.csv](move.csv) 30分単位でシュリンクした全件移動データ
-- [user.csv](user.csv) 30分単位でシュリンクしたユーザー全件データ
+- [user.csv](user.csv) ユーザー全件データ（施設移動ルート付き）
+- [move.csv](move.csv) 同一施設内で30分以内のデータは滞在時間として圧縮した全件移動データ
 
 ### How to make
 
